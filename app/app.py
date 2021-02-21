@@ -12,7 +12,7 @@ import pickle
 import os
 
 app=Flask(__name__) #create instance on flask
-model=pickle.load(open('../model/prof.pkl','rb'))
+model=pickle.load(open('prof.pkl','rb'))
 
 @app.route('/')
 def home():
